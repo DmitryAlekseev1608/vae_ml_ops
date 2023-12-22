@@ -1,0 +1,13 @@
+defaults:
+    - _self_
+
+train:
+    n_epochs: 40
+
+model:
+    size_img: 32
+    features: 16
+
+ml_ops:
+    mlflow_server: "http://128.0.1.1:8080"
+    mlflow_server_test: "http://127.0.0.1:8080"
