@@ -1,0 +1,6 @@
+outs:
+- md5: d7bc92d2be0acde5b8db4ec3ee657cd1.dir
+  size: 116589584
+  nfiles: 13233
+  hash: md5
+  path: lfw-deepfunneled

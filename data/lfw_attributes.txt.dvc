@@ -1,0 +1,5 @@
+outs:
+- md5: a68c039ac854fd966fe4bdc36674b98f
+  size: 14879205
+  hash: md5
+  path: lfw_attributes.txt
