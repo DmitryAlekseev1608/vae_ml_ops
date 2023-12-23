@@ -36,8 +36,8 @@ def print_auto_logged_info(r):
 def train():
     """Point entry for train"""
 
-    os.system('dvc pull --remote gd_vae --force')
-    os.system('dvc pull --remote gd_vae_txt --force')
+    os.system('dvc pull --remote gd_vae --force --with-deps data/lfw-deepfunneled')
+    os.system('dvc pull --remote gd_vae_txt --force --with-deps data/lfw_attributes.txt')
 
     mlflow.set_tracking_uri(uri=cfg.ml_ops.mlflow_server_test)
     mlflow.set_experiment("train VAE")
