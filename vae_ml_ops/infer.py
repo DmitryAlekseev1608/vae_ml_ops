@@ -17,7 +17,9 @@ def infer(cfg):
     device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
     autoencoder = LinearVAE(cfg).to(device)
-    autoencoder.load_state_dict(torch.load("models/autoencoder"))
+    autoencoder.load_state_dict(
+        torch.load("models/autoencoder", map_location=torch.device(device))
+    )
     autoencoder.eval()
 
     z = np.array([np.random.normal(0, 1, cfg.model.features) for i in range(10)])
