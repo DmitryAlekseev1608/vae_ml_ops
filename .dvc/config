@@ -1,4 +1,8 @@
 [core]
-    remote = gd_vae
+    remote = gd_vae_model
 ['remote "gd_vae"']
-    url = gdrive://1OOPKvA8ZzaekM5oWAEpWSX6rUkBPxX2A
+    url = gdrive://1lIcnrMkkXl9GxufsCjhR_4yl_WPedAKZ
+['remote "gd_vae_txt"']
+    url = gdrive://1S61qjnj-z4UEIxwRrJvWLN3flqX6S6yD
+['remote "gd_vae_model"']
+    url = gdrive://1_W-xNBdaoYQgxKuAog8R6xpidploByFb
