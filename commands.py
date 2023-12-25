@@ -39,7 +39,7 @@ def train():
     os.system('dvc pull --remote gd_vae --force --with-deps data/lfw-deepfunneled')
     os.system('dvc pull --remote gd_vae_txt --force --with-deps data/lfw_attributes.txt')
 
-    mlflow.set_tracking_uri(uri=cfg.ml_ops.mlflow_server_test)
+    mlflow.set_tracking_uri(uri=cfg.ml_ops.mlflow_server)
     mlflow.set_experiment("train VAE")
 
     with mlflow.start_run() as run:
@@ -76,7 +76,7 @@ def infer():
 
     os.system('dvc pull --remote gd_vae_model --force --with-deps models/autoencoder')
 
-    mlflow.set_tracking_uri(uri=cfg.ml_ops.mlflow_server_test)
+    mlflow.set_tracking_uri(uri=cfg.ml_ops.mlflow_server)
     mlflow.set_experiment("infer VAE")
 
     with mlflow.start_run():
